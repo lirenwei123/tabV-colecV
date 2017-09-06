@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="co" id="gTV-IL-0wX" customClass="myCocell">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiR-KJ-fQs">
+                        <rect key="frame" x="0.0" y="0.0" width="351" height="124"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0d-8p-236">
+                        <rect key="frame" x="326" y="0.0" width="25" height="124"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="UeL-iH-jhb"/>
+                        </constraints>
+                        <state key="normal" title="→"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kiR-KJ-fQs" secondAttribute="bottom" id="0Oh-bE-yVn"/>
+                <constraint firstAttribute="bottom" secondItem="a0d-8p-236" secondAttribute="bottom" id="KuC-2S-ygu"/>
+                <constraint firstItem="kiR-KJ-fQs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RBE-5o-WEz"/>
+                <constraint firstAttribute="trailing" secondItem="a0d-8p-236" secondAttribute="trailing" id="XaK-FV-M8G"/>
+                <constraint firstItem="a0d-8p-236" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bon-6q-gFf"/>
+                <constraint firstItem="kiR-KJ-fQs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oD1-HZ-cwj"/>
+                <constraint firstAttribute="trailing" secondItem="kiR-KJ-fQs" secondAttribute="trailing" id="qhE-WK-dh0"/>
+            </constraints>
+            <size key="customSize" width="351" height="124"/>
+            <connections>
+                <outlet property="btn" destination="a0d-8p-236" id="Ilo-yC-ASj"/>
+                <outlet property="coLab" destination="kiR-KJ-fQs" id="UgB-CB-4tv"/>
+            </connections>
+            <point key="canvasLocation" x="-168.5" y="5"/>
+        </collectionViewCell>
+    </objects>
+</document>
